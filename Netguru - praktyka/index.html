@@ -11,14 +11,23 @@
 </head>
 <body>
 
-
+     <!-- Why there are so many empty lines? -->
     <header>
         <navigation>
+             <!-- 
+                <nav> instead of <navigation> - this element isn't semantic and doesn not exist as a legit HTML element. 
+             -->
             <div id="main-nav">
-
+                <div id="main-nav">
+                <!-- 
+                    1. You unneccesary wrapped nav element into another div which we don't need. You can delete it and use <nav> element to style elements below. 
+                    2. Better name will be just "navbar"
+                -->    
                 <div class="netguru-icon">
+                    <!-- netguru-logo would be better name -->
                     <a href="#"><img src="images/logo.png"></a>
                 </div>
+                <!-- Don't wrap <a> into another div. it's completely unncecessary. Just style a element with proper class. -->
               
                 <div class="main-nav-desktop">
                     
@@ -33,6 +42,7 @@
                 </div>
 
                 <div class="menu-bar"><button>Estimate project</button></div>
+                <!-- Don't wrap this button into another div - it's completely unncecessary. Just style button element with proper class.  -->
                 <div class="menu-bar-span">
                 <span><p>___</p></span>
                 <span><p>___</p></span>       
@@ -43,27 +53,51 @@
 
     <div id="first-section-wrapper">
     <section id="main-section">
+        <!-- unnecessary wrapped <section> into this <div>  -->
 
         <header>
             <div class="header-main">
             <h1>Fuel for your <span class="innovation-fire">innovation fire</span></h1>
+            <!-- instead of <span> use <strong>   -->
             <br>
             <span class="main-section-header-description">Opinions, tips, and latest news on software, technology, design, and business for innovators like you.</span>
             </div>
+            <!-- 
+                Be careful as fuck of how your code looks like! Make indentations in your code to make it more readable. What I mean by this:
+                <el>
+                    <el></el>
+                    <el></el>
+                    <el></el>
+                        <el></el>
+                    <el></el>
+                </el>
+                Be constant in all cases. It's very important. 
+             -->
         </header>
 
         <div class="main-section-container">
 
         <a href="#" class="box-a">
             <div class="box box1">
+                <!-- 
+                    1. Naming is the hardest part of programming. When you think about name of something in your code - try to come up with a name that will be logical and understandable for another people who could read this code in the future. In this case go with smth like .topic-tile
+                    2. Unnecesary div inside <a> element - remove this div and just style <a> with proper class names. 
+                 -->
                 <h2 class="box-h2 h2-1">UX & UI DESIGN</h2>
+                <!-- 
+                    Don't use all capitalizied letters in HTML. If needed, style it with css property text-transform: uppercase;
+                 -->
                 <h3 class="box-h3">Abstract</h3>
                 <span class="box-describtion">The art of creating engaging digital experiences</span>
-
+                <!-- use <p> for thhis -->
  
                 <div class="read-magazine-div">
+                    <!-- read-magazine-div sound awful, rename it just to smth like ? -->
                 <span class="read-magazine">Read Magazine ></span>
                 <span class="read-magazine2 rd1">_______________</span>
+                <!-- 
+                    Lol wtf is that :D Don't use ____ as line - style some div (or just .read-magazine in this case) with border-bottom css property. 
+                 -->
                 </div>
             </div>
         </a>
