@@ -1,110 +1,92 @@
-                        /* NAVIGACJA + SEKCJA GLOWNA  */
-
-
-*{
+* {
     margin: 0;
     font-family:Arial, Helvetica, sans-serif
 }
-h1{
+
+:root {
+    --main-bg-color: white;    
+    --main-ng-color: #00d563;
+}
+.general-h1 {
     font-size: 2.2em;
 }
 
-
-
-
-
-
-/* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE */
-
-
-
-
-
-    #first-section-wrapper{
-        margin-left: 5%;
-        margin-right: 5%;
-     }
-
-                /*  NAWIGACJA !!! */
-
-#main-nav{
-    background-color: rgb(255, 255, 255);
+.navbar {
+    background-color: var(--main-bg-color);
     height: 60px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     position: fixed;
     top: 0;
     border-bottom: 1px solid rgb(233, 233, 233);
+    padding: 0 14px 0 20px;
+    opacity: 2;
+    z-index: 999;
 }
 
-.netguru-icon{
+.netguru-logo {
     color: white;
     height: 100%;
-    width: 10%;
     display: flex;
     align-items: center;
-
 }
-.netguru-icon a{
+
+.netguru-logo img {
     width: 45px;
-    height: 30px;
-    font-size: 35px;
-    position: relative;
-    left: 15px;
-    
+    height: 35px;
 }
 
-.menu-bar button{ 
+.menu-bar { 
     display: none;
 }
 
-
-.menu-bar-span{
+.menu-bar-span {
     color: black;
     height: 100%;
     width: 10%;
     display: flex;
     line-height: 12px;
     position: relative;
-    right: 7px;
+    padding-right: 35px;
     flex-direction: column;
-
-} 
-.menu-bar-span span{
+}
+ 
+.menu-bar-span span {
     display: block;
     position: relative;
     height: 10px;;
     top: 15px;
 }
-.menu-bar-span span p{
+
+.menu-bar-span span p {
     font-weight:bolder;
 }
-.menu-bar-span span p:hover{
+
+.menu-bar-span span p:hover {
     cursor: pointer;
 }
 
-
-                        /* GLOWNA SEKCJA */
-
-#first-section-wrapper{
-    margin-top: 8rem;
-}
-
-#main-section{
+/* MAIN SECTION */      
+.main-section {
+    margin-top: 15vh;
+    margin-left: 7%;
+    margin-right: 7%;
     display: grid;
     text-align: center;
 }
 
-                    /* GLOWNA SEKCJA - Header */
-
-
-
-.innovation-fire{
+.first-section-wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 8rem;
+ }
+                    /* MAIN SECTION - Header */
+.innovation-fire {
     color: rgb(17, 204, 0);
 }
 
-.main-section-header-description{
+.main-section-header-description {
     display: block;
     margin-top: 25px;
     color: grey;
@@ -113,46 +95,45 @@ h1{
     line-height: 25px;
 }
 
-                    /* GLOWNA SEKCJA - BOXY */
-
-.main-section-container{
+.main-section-container {
     display: grid;
     margin-top: 6vh;
     justify-content: center;
-
 }
 
-.box{
+.first-section-box {
     min-width: 280px;
     max-width: 382px;
     height: 287.5px;
     display: flex;
     flex-direction: column;
     justify-self: center;
-
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-    border: 1px solid rgb(214, 214, 214);
-    border-radius: 2%;
-}
-.box:hover{
-    box-shadow: 0px 0px 30px 1px rgb(238, 238, 238);
-}
-.box-a{
     text-decoration: none;
     color: black;
+
+    margin-bottom: 25px;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 2%;
+    transition: .2s ease-in-out;
 }
 
- .box-h2{
+.first-section-box:hover {
+    box-shadow: 0px 0px 30px 1px rgb(238, 238, 238);
+}
+
+ .box-h2 {
      font-size: 13px;
      padding: 40px 20px 20px 20px;
      letter-spacing: 1px;
-
  }
- .box-h3{
-     font-size: 22px;
- }       
- .box-describtion{
+
+ .box-h3 {
+     font-size: 20px;
+     padding-top: 5px;
+     font-weight: 550;
+ }  
+
+ .box-describtion {
     font-family: helvetica;
     font-size: 15px;
     color: rgb(97, 97, 97);
@@ -160,199 +141,185 @@ h1{
     padding: 20px 25px 0 25px;
     line-height: 25px;
     height: 50px;
-    margin-bottom: 20%;
+    margin-bottom: 50px;
  }
 
- .read-magazine-div{
-    bottom: 2px;
+ .box-read-magazine {
+    font-size: 15px;
     font-weight: bolder;
     letter-spacing: 1px;
-    line-height: 9px;
-    display: flex;
-    flex-direction: column;
 
-    
-    
  }
-.read-magazine{
-    padding-top: 0.1rem;
+
+ .box-read-magazine p {
+    padding-bottom: 15px;
+    width: 137px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
- .read-magazine2{
-   font-weight: lighter;
-   color: #ff4d6d;
+.box-underline-color1 {
+    border-bottom: 1px solid #ff4d6d;
+}
+.box-underline-color2 {
+    border-bottom: 1px solid #3f89ff;
+}
+.box-underline-color3 {
+    border-bottom: 1px solid #bc9c5f;
+}
+.box-underline-color4 {
+    border-bottom: 1px solid #f48e41;
+}
+.box-underline-color5 {
+    border-bottom: 1px solid #7b008f;
+}
+.box-underline-color6 {
+    border-bottom: 1px solid #fac303;
+}
+.box-underline-color7 {
+    border-bottom: 1px solid #4cc9f0;
+}
+.box-underline-color8 {
+    border-bottom: 1px solid #b17df9;
+}
+
+ .h2-1, .h2-2, .h2-3, .h2-4, .h2-5, .h2-6, .h2-7, .h2-8 {
+    text-transform: uppercase;
  }
 
- .h2-1, .rd1{
+ .h2-1, .rd1  { 
     color: #ff4d6d;
  }
- .h2-2, .rd2{
+ .h2-2, .rd2 {
     color: #3f89ff;
  }
- .h2-3, .rd3{
+ .h2-3, .rd3 {
     color: #bc9c5f;
  }
- .h2-4, .rd4{
+ .h2-4, .rd4 {
     color: #f48e41;
  }
- .h2-5, .rd5{
+ .h2-5, .rd5 {
     color: #7b008f;
  }
- .h2-6, .rd6{
+ .h2-6, .rd6 {
     color: #fac303;
  }
- .h2-7, .rd7{
+ .h2-7, .rd7 {
     color: #4cc9f0;
  }
- .h2-8, .rd8{
+ .h2-8, .rd8 {
     color: #b17df9;
  }
 
- @media screen and (min-width: 490px){ 
-    #first-section-wrapper{
+ @media screen and (min-width: 490px) { 
+    .first-section-wrapper
+    {
         margin-left: 10%;
         margin-right: 10%;
      }
 }
-/* MOBILE END MOBILE END MOBILE END MOBILE END MOBILE END MOBILE END  */
-
-
-
-
-
-
-/* TABLET  TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET */
-
-
-@media only screen and (min-width: 768px){
-    #main-nav{
+/* TABLET START / TABLET START / TABLET START / TABLET START  */
+@media only screen and (min-width: 768px) {
+    .navbar {
         height: 70px;
     }
-    .menu-bar span{
+    .menu-bar span {
         top: 18px;
     }
-    #first-section-wrapper{
+    .first-section-wrapper {
         margin-left: 5%;
         margin-right: 5%;
      }
-
-
-    .main-section-container{
+    .main-section-container {
         display: grid;
         text-align: center;
         grid-template-columns: auto auto;
         grid-gap: 40px;
     }
-
 }
-
-
-
-@media only screen and (min-width: 1024px){
-    
-    #main-nav{
-
-        /* display: grid; */
-        /* grid-template-columns: 13vw 3vw 3vw 3vw 6vw 3vw 3vw 3vw 3vw auto; */
-        /* align-items: center; */
-        /* font-size: 14px; */
-        /* width: 100%; */
-
+/* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP */
+@media only screen and (min-width: 1024px) {
+    .navbar {
         font-size: 14px;
         font-weight: bold;
     }
-
-    #main-nav img{
+    .navbar img {
         content: url("images/logo2.png");
     } 
-    
-    .netguru-icon{
-        position: static;
-        width: 150px;
-
+    .netguru-logo img {
+        width: 130px;
+        height: 28px;
     }
-
-    .menu-bar{
-        width: 185px;
-        display: grid;
-        align-items: center;
-        position: relative;
-        right: 25px;
-
-        margin-left: 20px;
-    }
-    .menu-bar button{
+    .menu-bar {
         display: block;
-        background-color: #00d563;
-        border: 1px solid #00d563;
+        align-self: center;
+        text-justify: center;
+        width: 170px;
+        height: 46px;
+        margin-right: 40px;
+
+        background-color: var(--main-ng-color);
+        border: 1px solid var(--main-ng-color);
         color: white;
         border-radius: 4px;
-        height: 75%;
-        width: 100%;
-        font-size: 14px;
+        font-size: 13px;
+        font-weight: bold;
     }
-    .menu-bar-span{
+    .menu-bar-span {
         display: none;
     }
-
-.main-nav-desktop{
+.navbar-desktop {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto ;
     align-items: center;
     grid-column-gap: 40px;
     grid-column-gap: 20px;
 }
-
-.services::after{
+.services::after {
     content: 'Services';
     width: 60px;
 }
-.industries::after{
+.industries::after {
     content: 'Industries';
     width: 60px;
 }
-.clients::after{
+.clients::after {
     content: 'Clients';
     width: 60px;
 }
-.about-us::after{
+.about-us::after {
     content: 'About-us';
     width: 60px;
 }
-.insights::after{
+.insights::after {
     content: 'Insights';
     width: 60px;
 }
-.resources::after{
+.resources::after {
     content: 'Resources';
     width: 60px;
 }
-.careers::after{
+.careers::after {
     content: 'Careers';
     width: 60px;
 }
-
-
-
-
-
-
-
-
-/* SEKCJA GLOWNA   */
-
-
-.main-section-header-description{
-    padding: 0 20% 50px 20%;
-}
-
-
-.main-section-container{
+                    /* MAIN SECTION   */
+.main-section-container {
     display: grid;
     text-align: center;
     grid-template-columns: auto auto auto;
     grid-gap: 40px;
 }
-    
+.main-section-header-description {
+    padding: 0 20% 50px 20%;
+}
 }
 
+@media screen and (min-width: 1366px) {
+    .main-section-container {
+        width: 1250px;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 40px;
+    }
+}
