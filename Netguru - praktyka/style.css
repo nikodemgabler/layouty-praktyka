@@ -68,6 +68,9 @@
 
 /* MAIN SECTION */      
 .main-section {
+    margin-top: 15vh;
+    margin-left: 7%;
+    margin-right: 7%;
     display: grid;
     text-align: center;
 }
@@ -95,7 +98,6 @@
     display: grid;
     margin-top: 6vh;
     justify-content: center;
-
 }
 
 .first-section-box {
