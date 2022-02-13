@@ -22,6 +22,7 @@
     border-bottom: 1px solid rgb(233, 233, 233);
     padding: 0 14px 0 20px;
     opacity: 2;
+    z-index: 999;
 }
 
 .netguru-logo {
@@ -212,7 +213,8 @@
  }
 
  @media screen and (min-width: 490px) { 
-    .first-section-wrapper {
+    .first-section-wrapper
+    {
         margin-left: 10%;
         margin-right: 10%;
      }
@@ -312,6 +314,12 @@
 .main-section-header-description {
     padding: 0 20% 50px 20%;
 }
-
 }
 
+@media screen and (min-width: 1366px) {
+    .main-section-container {
+        width: 1250px;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 40px;
+    }
+}
